@@ -8,7 +8,7 @@ endfunction
 u1 = binary(t);
 u2 = binary(2*t);
 u3 = binary(3*t);
-subplot(1, 2, 1);
+subplot(2, 1, 1);
 plot(t, u1, 'b', 'LineWidth' , 1.5);
 plot(t, u2, 'r', 'LineWidth' , 1.5);
 plot(t, u3, 'g', 'LineWidth' , 1.5);
@@ -22,7 +22,7 @@ function sigmoid = bipolar(t)
     sigmoid = (exp(t) - exp(-1*t)) ./ (exp(t) + exp(-1*t));
 endfunction
 
-subplot(1, 2, 2);
+subplot(2, 1, 2);
 b1 = bipolar(t);
 b2 = bipolar(2*t);
 b3 = bipolar(3*t);
